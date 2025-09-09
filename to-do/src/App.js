@@ -16,6 +16,9 @@ function App() {
 
       <div className='body-content__container'>
         <h2>My Tasks</h2>
+        <div className='body-content__tasks-content'>
+          
+        </div>
       </div>
     </div>
   );
