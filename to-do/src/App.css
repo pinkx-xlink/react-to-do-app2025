@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.days__container {
+  display: flex;
+  flex-direction: column;
+}
+.days__container > button {
+  height: 100px;
+}
