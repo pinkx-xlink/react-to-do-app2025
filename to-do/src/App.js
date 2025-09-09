@@ -2,6 +2,8 @@ import './App.css';
 import TodaysDate from './components/TodaysDate';
 import NewToDo from './components/NewToDo';
 import DateSidebar from './components/DateSidebar';
+import ToDos from './components/ToDos';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <h2>My Tasks</h2>
         <div className='body-content__tasks-content'>
           <DateSidebar />
+          <ToDos />
         </div>
       </div>
     </div>

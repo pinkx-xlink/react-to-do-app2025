@@ -37,6 +37,9 @@
   }
 }
 
+.body-content__tasks-content {
+  display: flex;
+}
 
 .days__container {
   display: flex;

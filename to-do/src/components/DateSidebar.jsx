@@ -7,7 +7,6 @@ const DateSidebar = () => {
 
   return (
     <>
-    <div>DateSidebar</div>
     <div className='days__container'>
         {days.map((day, index) => {
             const date = new Date(today);
