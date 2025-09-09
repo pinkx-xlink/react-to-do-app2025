@@ -1,7 +1,7 @@
 import './App.css';
 import TodaysDate from './components/TodaysDate';
 import NewToDo from './components/NewToDo';
-
+import DateSidebar from './components/DateSidebar';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <div className='body-content__container'>
         <h2>My Tasks</h2>
         <div className='body-content__tasks-content'>
-          
+          <DateSidebar />
         </div>
       </div>
     </div>
