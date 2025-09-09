@@ -13,6 +13,10 @@ function App() {
         <NewToDo />
 
       </header>
+
+      <div className='body-content__container'>
+        <h2>My Tasks</h2>
+      </div>
     </div>
   );
 }
