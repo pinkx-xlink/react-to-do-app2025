@@ -2,7 +2,7 @@ import React from 'react'
 
 const NewToDo = () => {
   return (
-    <div>NewToDo
+    <div>
         <button>New To-Do</button>
     </div>
   )
