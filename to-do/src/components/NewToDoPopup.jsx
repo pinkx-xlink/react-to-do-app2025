@@ -9,8 +9,21 @@ const NewToDoPopup = () => {
             <Popup trigger=
                 {<button> Click to open popup </button>}
                 position="right center">
-                <div>GeeksforGeeks</div>
-                <button>Click here</button>
+                 <form id="myForm">
+                    <label for="task">Task:</label>
+                    <input type="text" id="task" name="task" placeholder="Enter the task" required />
+                    <br/>
+                    <label for="project">Project:</label>
+                    <input type="text" id="project" name="project" placeholder="MAKE THIS A DROPDOWN" required />
+                    <br/>
+                    <label for="recurring">Recurring:</label>
+                    <input type="text" id="recurring" name="recurring" placeholder='Set recurrance frequency-daily, weekly, etc' require />
+                    <br/>
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" id="dueDate" name="dueDate" placeholder="Enter the due date" required />
+                    <br/>
+                    <button type="button" id="submitButton">Submit</button>
+                </form>
             </Popup>
     </div>
   )
