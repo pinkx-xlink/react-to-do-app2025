@@ -3,7 +3,7 @@ import TodaysDate from './components/TodaysDate';
 import NewToDo from './components/NewToDo';
 import DateSidebar from './components/DateSidebar';
 import ToDos from './components/ToDos';
-
+import NewToDoPopup from './components/NewToDoPopup';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <TodaysDate />
         <h1>To Do</h1>
         <NewToDo />
+        <NewToDoPopup />
 
       </header>
 
