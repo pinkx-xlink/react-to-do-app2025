@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import ToDoItem from './ToDoItem';
 
+const handleSubmit = () => {
+    console.log('ksdnkjn')
+    return (
+      <ToDoItem />
+    )
+  }
+  
 const NewToDoPopup = () => {
+  
   return (
     <div>NewToDoPopup
          <h4>Popup - GeeksforGeeks</h4>
@@ -22,7 +31,7 @@ const NewToDoPopup = () => {
                     <label for="dueDate">Due Date:</label>
                     <input type="date" id="dueDate" name="dueDate" placeholder="Enter the due date" required />
                     <br/>
-                    <button type="button" id="submitButton">Submit</button>
+                    <button type="button" id="submitButton" onSubmit={handleSubmit}>Submit</button>
                 </form>
             </Popup>
     </div>
