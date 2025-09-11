@@ -11,7 +11,6 @@ const NewToDoPopup = () => {
 
   return (
     <div>
-         <h4>Popup - GeeksforGeeks</h4>
             <Popup trigger=
                 {<button> Add new to-do </button>}
                 position="right center">
