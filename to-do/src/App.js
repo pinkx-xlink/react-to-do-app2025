@@ -2,6 +2,7 @@ import './App.css';
 import TodaysDate from './components/TodaysDate';
 import DateSidebar from './components/DateSidebar';
 import NewToDoPopup from './components/NewToDoPopup';
+import ProjectsDropdown from './components/ProjectsDropdown';
 
 function App() {
   return (
