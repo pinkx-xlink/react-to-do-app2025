@@ -11,7 +11,7 @@ function App() {
         
         <TodaysDate />
         <h1>To Do</h1>
-        <NewToDoPopup />
+        
 
       </header>
 
@@ -19,7 +19,11 @@ function App() {
         <h2>My Tasks</h2>
         <div className='body-content__tasks-content'>
           <DateSidebar />
-          <ToDos />
+          <div className='body-content__tasks-content__to-dos'>
+            <ToDos />
+            <NewToDoPopup />
+          </div>
+          
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const NewToDoPopup = () => {
     <div>NewToDoPopup
          <h4>Popup - GeeksforGeeks</h4>
             <Popup trigger=
-                {<button> Click to open popup </button>}
+                {<button> Add new to-do </button>}
                 position="right center">
                  <form id="myForm">
                     <label for="task">Task:</label>
