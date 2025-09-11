@@ -7,7 +7,7 @@ let nextId = 0;
 const NewToDoPopup = () => {
   const [task, setTask] = useState('');
   const [dueDate, setDueDate] = useState('');
-  const [artists, setArtists] = useState([]);
+  const [todos, setTodos] = useState([]);
 
   return (
     <div>
@@ -47,19 +47,19 @@ const NewToDoPopup = () => {
                     type="button" 
                     id="submitButton" 
                     onClick={() => {
-                        setArtists([
-                            ...artists,
+                        setTodos([
+                            ...todos,
                             { id: nextId++, task: task, dueDate: dueDate }
                         ]);
                     }}>Submit</button>
                 </form>
             </Popup>
             <ul>
-                {artists.map(artist => (
-                    <li key={artist.id}>
-                        {artist.task}
+                {todos.map(todo => (
+                    <li key={todo.id}>
+                        {todo.task}
                         <br/>
-                        {artist.dueDate}
+                        {todo.dueDate}
                     </li>
                 ))}
             </ul>
