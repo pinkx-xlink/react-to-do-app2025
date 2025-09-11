@@ -6,6 +6,7 @@ let nextId = 0;
 
 const NewToDoPopup = () => {
   const [task, setTask] = useState('');
+  const [dueDate, setDueDate] = useState('');
   const [artists, setArtists] = useState([]);
 
   return (
@@ -31,8 +32,16 @@ const NewToDoPopup = () => {
                     <label for="recurring">Recurring:</label>
                     <input type="text" id="recurring" name="recurring" placeholder='Set recurrance frequency-daily, weekly, etc' require />
                     <br/>
-                    <label for="dueDate">Due Date:</label>
-                    <input type="date" id="dueDate" name="dueDate" placeholder="Enter the due date" required />
+                    <label 
+                    for="dueDate">Due Date:</label>
+                    <input 
+                    type="date" 
+                    id="dueDate" 
+                    name="dueDate" 
+                    placeholder="Enter the due date" 
+                    required 
+                    onChange={e => setDueDate(e.target.value)}
+                    />
                     <br/>
                     <button 
                     type="button" 
@@ -40,14 +49,18 @@ const NewToDoPopup = () => {
                     onClick={() => {
                         setArtists([
                             ...artists,
-                            { id: nextId++, task: task }
+                            { id: nextId++, task: task, dueDate: dueDate }
                         ]);
                     }}>Submit</button>
                 </form>
             </Popup>
             <ul>
                 {artists.map(artist => (
-                    <li key={artist.id}>{artist.task}</li>
+                    <li key={artist.id}>
+                        {artist.task}
+                        <br/>
+                        {artist.dueDate}
+                    </li>
                 ))}
             </ul>
     </div>
