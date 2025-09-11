@@ -9,7 +9,7 @@ const NewToDoPopup = () => {
   const [artists, setArtists] = useState([]);
 
   return (
-    <div>NewToDoPopup
+    <div>
          <h4>Popup - GeeksforGeeks</h4>
             <Popup trigger=
                 {<button> Add new to-do </button>}

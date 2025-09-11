@@ -1,7 +1,6 @@
 import './App.css';
 import TodaysDate from './components/TodaysDate';
 import DateSidebar from './components/DateSidebar';
-import ToDos from './components/ToDos';
 import NewToDoPopup from './components/NewToDoPopup';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <div className='body-content__tasks-content'>
           <DateSidebar />
           <div className='body-content__tasks-content__to-dos'>
-            <ToDos />
             <NewToDoPopup />
           </div>
           
